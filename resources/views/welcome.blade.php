@@ -1,100 +1,55 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.publico')
 
-        <title>Laravel</title>
+@section('conteudo')
+<div class="container center-align sessao">
+    <h2>Quem Somos</h2>
+    <p>A Manvell conta com uma equipe multidisciplinar, preparada para atender as crescentes necessidades de nossos parceiros e clientes. Estamos localizados no centro oeste paulista, próximo ao centro geográfico paulista o que nos permite agilidade na logística de atendimento a demanda de nossos clientes a âmbito nacional.</p>    
+</div>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+<div class="center-align sessao grey lighten-3" id="servicos">
+    <div class="container">
+    <h2>O que Fazemos</h2>
+    <div class="row">
+        <div class="col m4">
+            <div class="servicos center-align">
+                <img class="materialboxed responsive-img img-servicos z-depth-3" width="100%" src="{{asset('img/caldeiraria.jpg')}}">
+                <h5>Caldeiraria</h5>
+                <p>Manutenção em tanques e silos industriais</p>
             </div>
         </div>
-    </body>
-</html>
+        <div class="col m4">
+            <div class="servicos">
+                <img class="materialboxed responsive-img img-servicos z-depth-3" width="100%" src="{{asset('img/mecanica_industrial.jpg')}}">
+                <h5>Mecânica Industrial</h5>
+                <p>Manutenção em máquinas e equipamentos</p>
+            </div>
+        </div>
+        <div class="col m4">
+            <div class="servicos">
+                <img class="materialboxed responsive-img img-servicos z-depth-3" width="100%" src="{{asset('img/isolamento_termico.jpg')}}">
+                <h5>Isolamento Térmico</h5>
+                <p>Manutenção e substituição de sistema isolante em equipamentos, tubulações e dutos.</p>
+            </div>
+        </div>
+        <div class="col m6 ">
+            <div class="servicos center-align">
+                <img class="materialboxed responsive-img img-servicos z-depth-3" src="{{asset('img/pintura_industrial.jpg')}}">
+                <h5>Pintura Industrial</h5>
+                <P>Pintura de instalações fabris, inclusive em altura.</P>
+            </div>
+        </div>
+        <div class="col m6">
+            <div class="servicos center-align">
+                <img class="materialboxed responsive-img img-servicos z-depth-3" src="{{asset('img/construcao_civil.jpg')}}">
+                <h5>Construção Civil</h5>
+                <p>Reparos e construções em geral dentro de parques industriais.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+@endsection
+
+
+
