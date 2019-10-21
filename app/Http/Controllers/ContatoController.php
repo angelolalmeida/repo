@@ -17,6 +17,7 @@ class ContatoController extends Controller
             $registro['telefone'] = $request->telefone;
             $registro['mensagem'] = $request->mensagem;
             Mail::to('angelolalmeida@yahoo.com.br')
+            ->cc('velloso@manvell.com.br')
             ->send(new ContatoSite($registro));
             return redirect()->route('index')->withStatus(__('E-mail Enviado'));
         }
