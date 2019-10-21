@@ -17,26 +17,26 @@
 
     <title>Manvell Manutenções e Montagens Industriais</title>
 
-    
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    
+
     <link type="text/css" rel="stylesheet" href="{{asset('css/publico.css')}}"  media="screen,projection"/>
 
     <script src="https://kit.fontawesome.com/58bd7ff2a8.js" crossorigin="anonymous"></script>
 
 
 
-    
+
     @yield('styles')
 </head>
 
 <body>
 
-    @include('layouts.nav_publico')    
+    @include('layouts.nav_publico')
 
     @yield('conteudo')
 
@@ -49,11 +49,11 @@
     <a class="btn-floating btn-large green" href="https://api.whatsapp.com/send?phone=5514997463647&text=Vi seu site e gostaria de mais informações" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-    
+
     </div>
-          
+
     <script>
-     
+
     $(document).ready(function(){
         $('.fixed-action-btn').floatingActionButton();
     });
@@ -71,7 +71,7 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-148895112-1');
-    </script>    
+    </script>
 
     @yield('scripts')
 </body>
