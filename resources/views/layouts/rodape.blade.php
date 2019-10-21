@@ -3,7 +3,7 @@
 
     @if (session('status'))
         <script>
-            M.toast({html: '{{ session('status') }}'})
+            M.toast({html: '{{ session('status') }} .'})
         </script>
 
     @endif
