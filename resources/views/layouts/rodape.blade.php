@@ -24,15 +24,15 @@
             <form method="post" action="{{ route('email') }}" autocomplete="off" class="form-horizontal">
                 @csrf
                 <div class="input-field col s12">
-                    <input  id="nome" name="nome" type="text" class="validate">
+                    <input  id="nome" name="nome" type="text" class="validate" placeholder="Meu nome">
                     <label for="first_name">Nome</label>
                   </div>
                   <div class="input-field col s12">
-                    <input  id="telefone" name="telefone" type="text" class="validate">
+                    <input  id="telefone" name="telefone" type="text" class="validate" placeholder="(14)99999-9999">
                     <label for="first_name">Telefone / Celular</label>
                   </div>
                   <div class="input-field col s12">
-                    <textarea id="mensagem" name="mensagem" class="materialize-textarea"></textarea>
+                    <textarea id="mensagem" name="mensagem" class="materialize-textarea">Mensagem</textarea>
                     <label for="first_name">Mensagem</label>
                   </div>
                   <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
