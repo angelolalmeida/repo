@@ -45,9 +45,9 @@
     @include('layouts.rodape')
 
 
-    <div class="fixed-action-btn">
-    <a class="btn-floating btn-large green" href="https://api.whatsapp.com/send?phone=5514997463647&text=Vi seu site e gostaria de mais informações" target="_blank">
-        <i class="fab fa-whatsapp"></i>
+    <div class="fixed-action-btn"><div class="btn green orcamento">
+    <a href="https://api.whatsapp.com/send?phone=5514997463647&text=Vi seu site e gostaria de mais informações" target="_blank">
+    Orçamento</div><div class="btn-floating btn-large green"><i class="fab fa-whatsapp"></i></div>
     </a>
 
     </div>

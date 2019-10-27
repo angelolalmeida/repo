@@ -4,6 +4,8 @@
 <div class="container center-align sessao">
     <h2>Quem Somos</h2>
     <img class="materialboxed responsive-img z-depth-3" width="100%" src="{{asset('img/equipe.jpg')}}">
+    <br>
+    <img class="materialboxed responsive-img z-depth-3" width="100%" src="{{asset('img/site/fachada.png')}}">
     <p>A Manvell conta com uma equipe multidisciplinar, preparada para atender as crescentes necessidades de nossos parceiros e clientes. Estamos localizados no centro oeste paulista, próximo ao centro geográfico paulista o que nos permite agilidade na logística de atendimento a demanda de nossos clientes a âmbito nacional.</p>
 </div>
 

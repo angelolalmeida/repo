@@ -4,7 +4,7 @@
 }
 
 .topo_nav {
-    vertical-align: middle;    
+    vertical-align: middle;
     max-height: 64px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .servicos {
-    max-width: 300px !important;    
+    max-width: 300px !important;
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,4 +55,15 @@
     width: 100% !important;
     vertical-align: middle;
     padding: 20px;
+}
+
+.btn-floating.btn-large {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    margin-left: -10px !important;
+}
+
+.orcamento a {
+    color: white !important;
 }
